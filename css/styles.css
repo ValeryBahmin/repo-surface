@@ -1,18 +1,20 @@
 /* CSS Document */
 
 @font-face {
-	font-family: OpenSans-Bold;
+	font-family: "OpenSans-Bold";
 	src: url('fonts/OpenSans-Bold.woff2') format('woff2'),	
 		 url('fonts/OpenSans-Bold.ttf') format('truetype'),
 		 url('fonts/OpenSans-Bold.woff') format('woff');
+		 font-weight: bold;
 		 font-style: normal;
 }
 
 @font-face {
-	font-family: OpenSans-Regular;
+	font-family: "OpenSans-Regular";
 	src: url('fonts/OpenSans-Regular.woff2') format('woff2'),	
 		 url('fonts/OpenSans-Regular.ttf') format('truetype'),
 		 url('fonts/OpenSans-Regular.woff') format('woff');
+		 font-weight: normal;
 		 font-style: normal;
 }
 
@@ -67,7 +69,6 @@ body {
 	align-content: space-around;
 	font-size: 1.3em;
 	color: white;
-	letter-spacing: 0.2em;
 }
 	
 #line1 {
@@ -101,13 +102,13 @@ body {
 }
 
 .btn_apple {
-	background: url(svg/apple_logo_black.svg) 10% center no-repeat rgba(75, 38, 163, 1);
+	background: url("../svg/apple_logo_black.svg") 10% center no-repeat rgba(75, 38, 163, 1);
 	background-size: 17%;
 	padding-left: 6em;		
 }
 
 .btn_google {
-	background: url(svg/google_play.svg) 20% center no-repeat rgba(75, 38, 163, 1);
+	background: url("../svg/google_play.svg") 20% center no-repeat rgba(75, 38, 163, 1);
 	background-size: 17%;	
 	padding-left: 8em;		
 }
@@ -131,7 +132,6 @@ body {
 
 .headers {
 	margin: 1em 0 0.2em 0;	
-	font-family: "OpenSans-Bold";
 	font-size: 3em;
 	color: rgba(225, 225, 225, 1);
 }
@@ -175,7 +175,6 @@ body {
 }
 
 .connection_01, .collaboration_02, .growth_03 {
-	font-family: "Arial";
 	font-size: 1.5em;
 	color: rgba(180, 180, 180, 1);
 	margin-bottom: 0;
@@ -203,8 +202,8 @@ body {
 }
 
 .text_box {
-	font-family: "OpenSans-Regular";
-	font-size: 0.9em;
+	font-family: "OpenSans-Regular", sans-serif;
+	font-size: 1em;
 }
 
 .growth_03 + p {
@@ -298,7 +297,7 @@ body {
 }
 
 .btn_download {
-	background: url(svg/surface_logo.svg) center center no-repeat rgba(75, 38, 163, 1);
+	background: url("../svg/surface_logo.svg") center center no-repeat rgba(75, 38, 163, 1);
 	background-size: 4em;
 	height: 5em;
 	width: 5em;
@@ -319,11 +318,11 @@ body {
 
 @media (max-width: 640px) {
 	.header {
-	  background-image: url(images/football_767.jpg);		
+	  	background-image: url("../images/football_767.jpg");		
 	}
 	
 	.footer {
-	  background-image: url(images/game_767.jpg);	  
+	  	background-image: url("../images/game_767.jpg");	  
 	}
 	
 	.btn_container, .btn_container_download {
@@ -389,6 +388,9 @@ body {
 		background-color: rgba(8, 8, 50, 1);
 	}
 	
+	.btn_download_name {
+		font-size: 1.5em;
+	}		
 }
 
 @media (max-width: 960px) {
@@ -403,10 +405,6 @@ body {
 		margin: 0;
 		padding: 0px 3rem 0px 2rem;		
 	} 
-	
-	.main_text {
-		font-size: 0.9em;
-	}
 	
 	.img_be_active {
 	  order: 1;	
@@ -445,11 +443,11 @@ body {
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.header {
-	  background-image: url(images/football_1280.jpg);		
+	  	background-image: url("../images/football_1280.jpg");		
 	}
 	
 	.footer {
-	  background-image: url(images/game_1280.jpg);	  
+	  	background-image: url("../images/game_1280.jpg");	  
 	}
 	
 }
@@ -467,11 +465,11 @@ body {
 
 @media (min-width: 961px) {
 	.header {
-	  background-image: url(images/football_1920.jpg);		
+	  background-image: url("../images/football_1920.jpg");		
 	}
 	
 	.footer {
-	  background-image: url(images/game_1920.jpg);	  
+	  background-image: url("../images/game_1920.jpg");	  
 	}
 	
 	.img_be_active {
