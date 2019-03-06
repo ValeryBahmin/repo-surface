@@ -23,6 +23,7 @@
 }	
 
 html {
+	min-width: 320px;	
 	font-size: 100%;
 	
 }
@@ -30,7 +31,7 @@ html {
 /* Style the body */
 body {
     width: 100vw;
-    min-width: 320px;
+    height: 100vh;
 	height: 100vh;
 	margin: 0;	  
     font-family: "OpenSans-Bold", "OpenSans-Regular", Arial, Helvetica, sans-serif;   
@@ -40,7 +41,7 @@ body {
 /* Header and Footer background */
 .header, .footer {
 	width: 100%;
-	height: 65%;
+	height: 90%;
 	position: relative;		
 	display: flex;
 	flex-direction: column;
