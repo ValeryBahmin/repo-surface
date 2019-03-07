@@ -191,6 +191,7 @@ body {
 	justify-content: flex-start;
 }
 
+/* Headers for all Articles  */
 .headers {
 	margin: 0;
 	padding: 1em;
@@ -203,6 +204,11 @@ body {
 	padding-left: 50vw;
 }
 
+.article_be_active .headers {
+	padding: 1em 0 0 0;
+}
+
+/* Images Footballer and Basketballer */
 .img_footballer, .img_basketballer {
 	width: 50%;
 	height: 100%;
@@ -235,7 +241,8 @@ body {
 	right: auto;
 	bottom: auto;
 }
-	
+
+/* Description for article Athlets and Players */
 .athlets_description, .players_description {
 	width: 100%;
 	display: flex;
@@ -480,7 +487,7 @@ body {
 	.be_active, .find_contact, .work_it {
 		flex-direction: column;		
 	}
-		
+	
 	.img_be_active, .img_find_contact, .img_work_it {
 		width: 100%;
 	}
