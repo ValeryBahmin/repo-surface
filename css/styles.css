@@ -22,18 +22,16 @@
 	box-sizing: border-box;
 }	
 
-html {
-	min-width: 320px;	
+html {	
 	font-size: 100%;
 	
 }
 
 /* Style the body */
-body {
-    width: 100vw;
-    height: 100vh;
+body {  
 	height: 100vh;
-	margin: 0;	  
+    min-width: 320px;
+    margin: 0;	  
     font-family: "OpenSans-Bold", "OpenSans-Regular", Arial, Helvetica, sans-serif;   
 }
 
@@ -73,7 +71,7 @@ body {
 
 .header_title {
 	width: 80%;
-	display: inline-flex;	
+	display: flex;	
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-content: space-around;
@@ -85,7 +83,7 @@ body {
 .header_title_span {
 	display: inline-block;
 	margin: 0;
-	padding-left: calc( (100% - 50%) / 2);		
+	padding-left: 25%;		
 }
 
 /* Buttons Header and Footer */
@@ -93,7 +91,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	
 }
 
 .btn_apple, .btn_google {
@@ -134,7 +133,7 @@ body {
 /* Logotype */
 .logo_text {
 	width: 8em;
-	height: 1.9em;
+	height: 2em;
 }
 
 .logo {
@@ -174,12 +173,6 @@ body {
 	color: rgba(146, 129, 190, 1);			
 }
 
-/*  MAIN  */
-
-.main {
-	width: 100%;
-}
-
 
 /* Articles ATHLETS and PLAYERS */
 
@@ -201,7 +194,7 @@ body {
 }
 
 .article_athlets .headers {
-	padding-left: 50vw;
+	padding-left: 50%;
 }
 
 .article_be_active .headers {
@@ -276,12 +269,12 @@ body {
 	
 .athlets_description .connection_box, .athlets_description .collaboration_box, .athlets_description .growth_box {
 	padding-right: 2em;
-	padding-left: 50vw;			
+	padding-left: 50%;			
 }
 
 .players_description .connection_box, .players_description .collaboration_box, .players_description .growth_box {
 	padding-left: 2em;
-	padding-right: 50vw;			
+	padding-right: 50%;			
 }
 
 /* Subheaders: connection, collaboration, growth */
@@ -347,8 +340,7 @@ body {
 /* Section in Article */
 .be_active, .find_contact, .work_it {
 	position: relative;
-	width: 100%;
-	display: flex;
+	display: flex;	
 }
 
 .img_be_active, .img_find_contact, .img_work_it {
@@ -374,7 +366,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	padding: 0px 3rem 0px 4rem;
+	padding: 0px 3em 0px 4em;
 	margin: 0;
 }
 
@@ -419,7 +411,8 @@ body {
 	}
 	
 	.header_title {
-		font-size: 1em;
+		width: 85%;
+		font-size: 1.1em;
 	}
 		
 	.footer {
@@ -431,16 +424,16 @@ body {
 	}
 	
 	.btn_apple, .btn_google {
-		width: calc(100vw - 20vw);
+		width: 80vw;
 		min-width: 25em;
 		background-size: 3.5em;
-		background-position: calc((100vw - 20vw)/4);
-		padding-left: calc((100vw - 20vw)/4 + 6em);
+		background-position: 20vw;
+		padding-left: calc(20vw + 6em);
 		flex: none;
 	}
 	
 	.download_app {
-		font-size: 2.2em;	
+		font-size: 2.1em;	
 	}
 	
 	.article_athlets .headers, .article_players .headers {
@@ -454,7 +447,7 @@ body {
 	.img_footballer .images {
 		position: absolute;		
 		top: 7em;
-		left: calc((100vw - 192px)/2);
+		left: calc((100% - 192px)/2);
 		right: 0;
 		bottom: 0;
 	}
@@ -462,13 +455,12 @@ body {
 	.img_basketballer .images {
 		position: absolute;		
 		top: 8em;
-		left: calc((100vw - 302px)/2);
+		left: calc((100% - 302px)/2);
 		right: 0;
 		bottom: 0;
 	}
 			
 	.athlets_description, .players_description {
-		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
@@ -481,7 +473,6 @@ body {
 		padding: 2em;		
 	}
 }
-
 
 @media (max-width: 960px) {
 	.be_active, .find_contact, .work_it {
@@ -498,14 +489,14 @@ body {
 			
 	.text_be_active, .text_find_contact, .text_work_it {
 		width: 100%;		
-		min-height: 20rem;
+		min-height: 15em;
 		margin: 0;
-		padding: 0px 3rem 0px 2rem;		
+		padding: 0 3em 0 2em;		
 	} 
 	
 	.block_number {
-		left: 2rem;
-		top: calc(100% - 20rem - 4rem);
+		left: 2em;
+		top: calc(100% - 19em);
 	}
 	
 	.container_download {
@@ -522,15 +513,50 @@ body {
 	}
 		
 	.download_p {
-		margin: 0;
 		font-size: 1em;
-		font-style: normal;
-		line-height: 1.5em;
-		color: rgba(146, 129, 190, 1);			
+		line-height: 1.5em;	
 	}
 }
 
 
+@media (max-width: 425px) and (orientation: portrait) {
+	.header_title {
+		width: 95%;
+		font-size: 1em;
+	}
+	
+	.header_title_span {
+		padding-left: 15%;		
+	}
+	
+	.article_be_active .headers {
+		font-size: 2em;
+	}
+	
+	.download_app {
+		font-size: 1.9em;	
+	}
+	
+	.download_p {
+		font-size: 0.9em;		
+	}	
+		
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+	.header, .footer {
+		height: 110%;
+	}
+	
+	.container_logo {
+		margin: 1em;
+	}
+	
+	.btn_apple, .btn_google {
+		margin: 1em;
+	}
+}
+	
 @media (min-width: 641px) and (max-width: 960px) {
 	.header {
 	  	background-image: url("../images/football_1280.jpg");		
