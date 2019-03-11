@@ -339,7 +339,8 @@ body {
 /* Section in Article */
 .be_active, .find_contact, .work_it {
 	position: relative;
-	display: flex;	
+	display: flex;
+	width: 100%;
 }
 
 .img_be_active, .img_find_contact, .img_work_it {
@@ -348,6 +349,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	align-self: stretch;
 	margin: 0;
 	background-color: #bcdbff;
 }
