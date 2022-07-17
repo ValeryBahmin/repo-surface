@@ -1,2 +1,2 @@
 # repo-surface
-Surface project
+Adaptive and mobile layout project
